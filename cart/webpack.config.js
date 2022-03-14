@@ -11,7 +11,8 @@ module.exports = {
       name: 'cart',
       filename: 'remoteEntry.js',
       exposes: {
-        './CartShow': './src/index',
+        //explanation of changing index.js in /products microfrontend
+        './CartShow': './src/bootstrap',
       },
       shared: ['faker']
       //To make it singleton. Review console messages when trying to load 

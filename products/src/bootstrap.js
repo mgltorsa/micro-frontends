@@ -1,6 +1,6 @@
 import faker from "faker";
 
-const renderOnElement = (el) => {
+const mount = (el) => {
   let products = "";
 
   for (let i = 0; i < 5; i++) {

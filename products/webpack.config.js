@@ -11,7 +11,9 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./ProductsIndex": "./src/index",
+        //We changed /src/index.js
+        //because bootstrap is the one exporting mount and not index
+        "./ProductsIndex": "./src/bootstrap",
       },
       shared: ["faker"],
       //To make it singleton. Review console messages when trying to load
