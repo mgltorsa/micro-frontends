@@ -13,7 +13,14 @@ module.exports = {
       exposes: {
         './CartShow': './src/index',
       },
-      shared: ['faker'],
+      shared: ['faker']
+      //To make it singleton. Review console messages when trying to load 
+      //to different versions as singleton
+      // shared: {
+      //   faker:{
+      //     singleton:true
+      //   }
+      // },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
