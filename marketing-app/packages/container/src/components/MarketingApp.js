@@ -11,6 +11,7 @@ export default () => {
 
   useEffect(() => {
     const { onParentNavigate } = mount(ref.current, {
+      initialPath: history.location.pathname,
       // onNavigate is being used to sync container's router
       // with child memory rotuer
       onNavigate: ({ pathname: nextPathname }) => {
