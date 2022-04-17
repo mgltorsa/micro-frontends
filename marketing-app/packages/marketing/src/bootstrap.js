@@ -22,6 +22,10 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
       if (pathname !== nextPathname) {
         history.push(nextPathname)
       }
+
+      else if (pathname !== '/pricing') {
+        history.push('/')
+      }
     }
   }
 };
