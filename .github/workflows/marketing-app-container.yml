@@ -5,7 +5,7 @@ on:
     branches:
       - release/marketing-app
     paths:
-      - 'packages/container/**'
+      - 'marketing-app/packages/container/**'
 
 defaults:
   run:
